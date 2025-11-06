@@ -5,7 +5,7 @@ A minimal yet powerful collection of configuration files for a productive develo
 ## ✨ Features
 
 - **Zsh** with Oh My Zsh, enhanced with intelligent plugins
-- **Tmux** with TPM plugins and Tokyo Night theme for enhanced productivity
+- **Tmux** with TPM plugins and Minimal Theme for enhanced productivity
 - **Smart navigation** with `z` plugin integration
 - **Autosuggestions** and syntax highlighting for shell commands
 
@@ -25,7 +25,7 @@ A minimal yet powerful collection of configuration files for a productive develo
 
 ### `.tmux.conf`
 - **Plugin Manager**: TPM (Tmux Plugin Manager) for easy plugin management
-- **Theme**: Tokyo Night theme with custom styling
+- **Theme**: [Minimal Theme](https://github.com/binoymanoj/tmux-minimal-theme) - Clean and minimal tmux statusbar
 - **Plugins**:
   - `tmux-sensible` - Sensible default settings
   - `tmux-resurrect` - Save/restore tmux sessions
@@ -33,9 +33,9 @@ A minimal yet powerful collection of configuration files for a productive develo
   - `tmux-yank` - Enhanced copying to system clipboard
 - **Features**:
   - Mouse support enabled
+  - Prefix key changed to `Ctrl+A`
   - Window numbering starts at 1
   - Automatic window renaming
-  - Custom status bar with relative path display
   - Quick reload with `Prefix + r`
 
 ## 🚀 Installation
@@ -56,18 +56,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Install TPM (Tmux Plugin Manager)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Install Nerd Font (required for Tokyo Night theme icons)
-# Ubuntu/Debian:
-sudo apt install fonts-firacode
-# Or download and install manually:
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.tar.xz
-mkdir -p ~/.local/share/fonts
-tar -xf FiraCode.tar.xz -C ~/.local/share/fonts
-fc-cache -fv
-
-# macOS:
-brew install font-fira-code-nerd-font
 ```
 
 ### Quick Setup
@@ -103,14 +91,14 @@ git clone <your-repo-url> ~/dotfiles && cd ~/dotfiles && ln -sf ~/dotfiles/.zshr
 - Use `ta` to attach to most recent tmux session, or `ta <session-name>` for specific session
 
 ### Tmux Workflow
-- `Ctrl+B` + `c` - Create new window
-- `Ctrl+B` + `"` - Split pane horizontally  
-- `Ctrl+B` + `%` - Split pane vertically
-- `Ctrl+B` + `r` - Reload configuration
-- `Ctrl+B` + `I` - Install plugins
-- `Ctrl+B` + `U` - Update plugins
-- `Ctrl+B` + `Ctrl+s` - Save session (requires tmux-resurrect)
-- `Ctrl+B` + `Ctrl+r` - Restore session (requires tmux-resurrect)
+- `Ctrl+A` + `c` - Create new window
+- `Ctrl+A` + `"` - Split pane horizontally  
+- `Ctrl+A` + `%` - Split pane vertically
+- `Ctrl+A` + `r` - Reload configuration
+- `Ctrl+A` + `I` - Install plugins
+- `Ctrl+A` + `U` - Update plugins
+- `Ctrl+A` + `Ctrl+s` - Save session (requires tmux-resurrect)
+- `Ctrl+A` + `Ctrl+r` - Restore session (requires tmux-resurrect)
 - Use mouse to resize panes and switch between windows
 
 ### Shell Features
@@ -133,10 +121,6 @@ Since these are symbolic links, any changes made in `~/dotfiles/` will automatic
 - This setup assumes you're using a Unix-like system (Linux/macOS)
 - The `.zshrc` includes NVM configuration - ensure NVM is installed if you need Node.js version management
 - OpenCode path is included in the environment variables
-- **Font Requirement**: Tokyo Night theme requires a Nerd Font (Fira Code recommended) for proper icon display
+- **Prefix Key**: Changed from default `Ctrl+B` to `Ctrl+A` for easier access
 - **TPM**: Make sure TPM is installed before loading tmux configuration
 - **Plugin Installation**: After first setup, press `Prefix + I` in tmux to install plugins
-
----
-
-*Minimal by design, powerful by choice.*
