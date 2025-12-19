@@ -5,6 +5,8 @@ Minimal shell and terminal configurations for a productive dev environment.
 ## Setup
 
 **Prerequisites:**
+- Zsh: `sudo apt install zsh` (then set as default shell: `chsh -s $(which zsh)`)
+- Tmux: `sudo apt install tmux`
 - Oh My Zsh: `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - Zsh plugins:
   ```bash
