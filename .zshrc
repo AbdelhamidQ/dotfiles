@@ -132,8 +132,12 @@ function cd() {
     builtin cd "$@"
   fi
 }
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # opencode
-export PATH=/home/zorex/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
