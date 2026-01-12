@@ -106,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias tm='tmux'
+alias c='code'
+alias oc='opencode'
 # Smart tmux attach function
 ta() {
   if [[ $# -eq 0 ]]; then

@@ -35,6 +35,7 @@ tmux source ~/.tmux.conf
 - Plugins: `git`, `z`, `zsh-autosuggestions`, `zsh-syntax-highlighting`
 - Smart `cd` function with `z` integration
 - `ta` function: attach to most recent tmux session (or `ta <name>` for specific)
+- `source ~/.zshrc` for adding new aliases
 
 ### `.tmux.conf`
 - Prefix: `Ctrl+A` (changed from `Ctrl+B`)
