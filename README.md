@@ -28,6 +28,26 @@ tmux source ~/.tmux.conf
 # In tmux, press Ctrl+A + I to install plugins
 ```
 
+**VS Code (Windows):**
+Run in an elevated Command Prompt (Admin):
+```cmd
+mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfiles\vscode\settings.json"
+mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfiles\vscode\keybindings.json"
+```
+
+**Windows Terminal:**
+Close Windows Terminal, then run in an elevated Command Prompt (Admin):
+```cmd
+del "%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" && mklink "%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" "%USERPROFILE%\dotfiles\windows-terminal\settings.json"
+```
+
+**AutoHotkey (Windows):**
+Requires [AutoHotkey v2](https://www.autohotkey.com/). Create a startup shortcut:
+1. Press `Win+R`, type `shell:startup`, press Enter
+2. Right-click → New → Shortcut
+3. Target: `"%USERPROFILE%\dotfiles\autohotkey\shortcuts.ahk"`
+4. Name it `Shortcuts`
+
 ## Configurations
 
 ### `.zshrc`
@@ -46,6 +66,30 @@ tmux source ~/.tmux.conf
 
 ### `opencode.json`
 OpenCode configuration with system theme and scroll acceleration enabled.
+
+### `vscode/`
+VS Code settings synced via symlinks:
+- `settings.json` - Editor preferences, theme (Catppuccin Mocha), formatters
+- `keybindings.json` - Custom shortcuts (Ctrl+E for explorer, Ctrl+G for git)
+
+### `windows-terminal/`
+Windows Terminal configuration:
+- `settings.json` - Catppuccin Mocha theme, Ubuntu as default profile
+
+### `autohotkey/`
+AutoHotkey v2 shortcuts for quick app switching:
+| Shortcut | Action |
+|----------|--------|
+| `Alt+1` | Zen Browser / Brave |
+| `Alt+2` | Windows Terminal |
+| `Alt+3` | VS Code |
+| `Alt+C` | Chrome |
+| `Alt+D` | Discord |
+| `Alt+E` | File Explorer |
+| `Alt+N` | Notepad |
+| `Alt+O` | Obsidian |
+| `Alt+T` | Microsoft To Do |
+| `Alt+Q` | Close active window |
 
 ## Quick Reference
 
