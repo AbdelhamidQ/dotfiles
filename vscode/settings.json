@@ -43,6 +43,9 @@
     },
     "window.restoreWindows": "none",
     "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "left",
+    "workbench.sideBar.location": "left",
+    "workbench.tree.indent": 12,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.accessibilitySupport": "off",
     "chat.mcp.gallery.enabled": true,
@@ -151,11 +154,9 @@
     "workbench.iconTheme": "catppuccin-mocha",
     "inlineChat.enableV2": true,
     "projectManager.sortList": "Recent",
-    "workbench.activityBar.location": "hidden",
     "workbench.colorTheme": "Catppuccin Mocha",
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.sideBar.location": "right",
     "editor.unicodeHighlight.invisibleCharacters": false
 }
