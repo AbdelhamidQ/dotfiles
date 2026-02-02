@@ -45,6 +45,7 @@
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "left",
     "workbench.sideBar.location": "left",
+    "workbench.auxiliaryBar.visible": false,
     "workbench.tree.indent": 12,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.accessibilitySupport": "off",
