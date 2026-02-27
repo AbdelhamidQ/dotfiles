@@ -4,3 +4,8 @@
 [user]
     email = abdulhamedq@hotmail.com
     name = AbdelhamidQ
+[alias]
+  st = status -sb
+  lg = log --oneline --graph --decorate --all
+  uncommit = reset --soft HEAD~1
+  clean-merged = "!git branch --merged | grep -v '\\*' | xargs -r git branch -d"
