@@ -66,8 +66,7 @@ Requires [AutoHotkey v2](https://www.autohotkey.com/). Create a startup shortcut
 - Window numbering starts at 1
 
 ### `.gitconfig`
-- Git defaults for branch setup, pull behavior, and fetch prune
-- Includes `~/.gitconfig.local` for per-machine overrides
+- Git global config with aliases
 
 ### `opencode.json`
 OpenCode configuration with system theme and scroll acceleration enabled.
