@@ -21,6 +21,7 @@ git clone <repo-url> ~/dotfiles
 cd ~/dotfiles
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/opencode
 ln -sf ~/dotfiles/opencode.json ~/.config/opencode/opencode.json
 source ~/.zshrc
@@ -63,6 +64,10 @@ Requires [AutoHotkey v2](https://www.autohotkey.com/). Create a startup shortcut
 - Plugins: `tmux-sensible`, `tmux-resurrect`, `tmux-continuum`, `tmux-yank`
 - Mouse support enabled
 - Window numbering starts at 1
+
+### `.gitconfig`
+- Git defaults for branch setup, pull behavior, and fetch prune
+- Includes `~/.gitconfig.local` for per-machine overrides
 
 ### `opencode.json`
 OpenCode configuration with system theme and scroll acceleration enabled.
