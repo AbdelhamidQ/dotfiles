@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias tm='tmux'
 alias c='code'
 alias oc='opencode'
+alias labserver='ssh admin@labserver'
 # Smart tmux attach function
 ta() {
   if [[ $# -eq 0 ]]; then

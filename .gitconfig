@@ -9,3 +9,12 @@
   lg = log --oneline --graph --decorate --all
   uncommit = reset --soft HEAD~1
   clean-merged = "!git branch --merged | grep -v '\\*' | xargs -r git branch -d"
+	new = "!f() { \\\n  git checkout main && \\\n  git pull && \\\n  git checkout -b \"$1\"; \\\n}; f"
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[push]
+	autoSetupRemote = true
