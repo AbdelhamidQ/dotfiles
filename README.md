@@ -1,6 +1,6 @@
 # Dotfiles
 
-Minimal shell and terminal configurations for a productive dev environment.
+My shell and terminal configurations for a productive dev environment.
 
 ## Setup
 
